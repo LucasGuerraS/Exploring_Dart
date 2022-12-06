@@ -3,14 +3,14 @@ import 'dart:math';
 import '../models/account.dart';
 
 void testNullSafety() {
-  Account? myAccount =
-      Account(name: "Lucas", balance: 200, isAuthenticated: true);
+  Account? myAccount;
 
   //Simulando comunicação externa
   Random rng = Random();
   int randomNumber = rng.nextInt(10);
   if (randomNumber <= 5) {
-    myAccount.createdAt = DateTime.now();
+    Account(name: "Lucas", balance: 200, isAuthenticated: true);
+    myAccount?.createdAt = DateTime.now();
   }
 
   print(myAccount.runtimeType);

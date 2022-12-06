@@ -21,6 +21,7 @@ void functionTwo() {
   for (int i = 1; i <= 5; i++) {
     print(i);
     double amount = double.parse("aaaaa");
+    print(amount);
   }
   print("functionTwo");
 }
